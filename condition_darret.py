@@ -1,24 +1,78 @@
 import chess
+import random
 
 board = chess.Board()
 #board.push
 print(board) 
 
-# condition d'arret : 
 
-# Si la piece est le roi blanc, qu'il est en echec et qu'il n'a plus de coup disponible, alors il y a echec et mat.
-def isEchecEtMatBlanc(self):
-    for i in range(0,63):
-        if self.fonction1(i).couleur == 'blanc' and self.fonction2(i) != []:
-            return False
-    return True
-                
-def isEchecEtMatNoir(self):
-    for i in range(0,63):
-        if self.fonction1(i).couleur == 'noir' and self.fonction2(i) != []:
-            return False
-    return True
+#moves = board.legal_moves
+#print(moves.count())
+
+while (not board.is_game_over()):
+    moves=board.legal_moves
+    listMoves=[]
+    for move in moves:
+        listMoves.append(move)
+    next=listMoves[random.randint(0,moves.count()-1)]
+    board.push(next)
+    
+# si le joueur n'a pas de coups disponible alors il est en échec et mat
+    if next ==  [] :
+        print("joueur en échec et mat")
+        
+        
+    
 
 
-# fonction1 : pour avoir la position des pièces
-# fonction2 : la liste des coups possibles     
+    #display the move
+    print(move)
+    
+    #save the current position
+    current_board = board
+    
+    #do the move
+    board.push(move)
+    
+    #display the board
+    print(board)
+    
+    #number of black moves
+    print("Black moves:" + str(board.legal_moves.count()))
+    
+    #undo the move
+    board.pop()
+    
+    
+    
+    #do we have a winner?
+    if (board.is_game_over()):
+        print("The game is over")
+        print(board.result())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   é
