@@ -52,15 +52,15 @@ def MineMax(etatcourant,prof,boolean):
     if (prof==0 or conditiondarret):
         return etatcourant #ne bouge pas
     elif boolean==False:
-        valeur=-99999
+        valeur=-9999
         for child in etatcourant.board.legal_moves :
-            etatcourant=board.push(next)
+            etatcourant=board.push(chess.Move.from_uci(move))
             valeur=max(valeur,MineMax(child,prof-1,False))
         return valeur
     else:
-        valeur=99999
+        valeur=9999
         for child  in etatcourant.board.legal_moves:
-            etatcourant=board.push(next)
+            etatcourant=board.push(chess.Move.from_uci(move))
             valeur=min(valeur,MineMax(child,prof-1,True))
         return valeur
                     
