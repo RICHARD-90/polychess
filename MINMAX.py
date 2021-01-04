@@ -56,7 +56,7 @@ def MineMax(etatcourant,prof,boolean):
         for child in etatcourant.board.legal_moves :
             etatcourant=board.push(next)
             valeur=max(valeur,MineMax(child,prof-1,False))
-           return valeur
+        return valeur
     else:
         valeur=99999
         for child  in etatcourant.board.legal_moves:
