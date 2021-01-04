@@ -49,8 +49,8 @@ print(MineMax("gc"))
 
 
 def MineMax(etatcourant,prof,boolean):
-    if (prof==0 or conditiondarret):
-        return etatcourant #ne bouge pas
+    if (prof==0 or etatcourant.is_game_over()):
+        return ponderation(etatcourant) #ne bouge pas
     elif boolean==False:
         valeur=-9999
         for child in etatcourant.board.legal_moves :
