@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 class Piece :
     def __init__(self, nom):
         self.nom = nom
