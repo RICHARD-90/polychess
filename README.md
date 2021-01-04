@@ -49,4 +49,6 @@ Board representation and legal moves are no longer provided by python-chess but 
 * Zobrist key
 * Perft
 
+# Déroulement
+Le programme va permettre à l'utilisateur de commencer une partie d'échecs et donc de déplacer des pièces à sa guise, selon les mouvements qu'il juge stratégiques. Il jouera soit contre un autre joueur, soit contre une IA.
 
