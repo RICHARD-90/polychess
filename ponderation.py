@@ -1,2 +1,5 @@
 
 import chess
+
+
+def ponderation(
