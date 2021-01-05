@@ -57,4 +57,4 @@ def hachage():
         
     print ("Le hachage actuel est :", val_hachee)
 
-
+"""https://github.com/niklasf/python-chess/blob/master/chess/polyglot.py"""
