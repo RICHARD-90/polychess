@@ -50,11 +50,12 @@ Board representation and legal moves are no longer provided by python-chess but 
 * Perft
 
 ## Objectif
-Le programme va permettre à l'utilisateur de commencer une partie d'échecs et donc de déplacer des pièces à sa guise, selon les mouvements qu'il juge stratégiques. Il jouera soit contre un autre joueur, soit contre une IA.
+Le programme va permettre à l'utilisateur de commencer une partie d'échecs et donc de déplacer des pièces à sa guise, selon les mouvements qu'il juge stratégiques. Il jouera une partie standard, soit contre un autre joueur, soit contre une IA.
 
 ## Déroulement
 Pour jouer aux échecs, il faudra :
 - Un échéquier composé de 64 cases : 32 cases blanches et 32 cases noires.
+
 - Des pièces : 16 pièces noires pour un joueur et 16 pièces blanches pour un joueur.
 
 
