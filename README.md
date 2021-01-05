@@ -54,8 +54,9 @@ Le programme va permettre à l'utilisateur de commencer une partie d'échecs et 
 
 ## Déroulement
 Pour jouer aux échecs, il faudra :
-- Un échéquier composé de 64 cases : 32 cases blanches et 32 cases noires.
+- Un échéquier composé de 64 cases : 32 cases blanches et 32 cases noires. Il comporte 8 colonnes (de A à Z) et 8 lignes (de 1 à 8).
+- Des pièces : 16 pièces noires pour un joueur et 16 pièces blanches pour un joueur. Chaque joueur dispose d'un Roi, une Dame, deux Tours, deux Fous, deux Cavaliers et huit Pions.
 
-- Des pièces : 16 pièces noires pour un joueur et 16 pièces blanches pour un joueur.
+L'objectif est de mettre en échec et mat le Roi du joueur adverse, c'est-à-dire que l'échec ne peut plus être évité. Les deux joueurs jouent à tour de rôle en déplaçant une seule de leurs pièces  (le roque, que nous verrons plus loin, est une exception à cette règle). Si une pièce se déplace sur une case occupée par une pièce adverse, celle-ci est prise et enlevée de l’échiquier. Une pièce ne peut pas se placer sur une case occupée par une pièce de son propre camp. Seul le Cavalier peut sauter au-dessus des autres pièces.
 
 
