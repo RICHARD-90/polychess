@@ -1,5 +1,8 @@
 import chess
 board = chess.Board()
+# recupérer la position des pièces
+board.fen()
+
 # importer le fichier __init__()
 # tant que le jeu n'est pas terminé, on joue
 tour = 0 # permet de determiner a qui le tour
