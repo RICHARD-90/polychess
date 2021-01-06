@@ -59,4 +59,9 @@ Pour jouer aux échecs, il faudra :
 
 L'objectif est de mettre en échec et mat le Roi du joueur adverse, c'est-à-dire que l'échec ne peut plus être évité. Les deux joueurs jouent à tour de rôle en déplaçant une seule de leurs pièces  (le roque, que nous verrons plus loin, est une exception à cette règle). Si une pièce se déplace sur une case occupée par une pièce adverse, celle-ci est prise et enlevée de l’échiquier. Une pièce ne peut pas se placer sur une case occupée par une pièce de son propre camp. Seul le Cavalier peut sauter au-dessus des autres pièces.
 
+## Caractéristiques du programme
 
+- Interface d'échecs universelle (UCI)
+Le moteur doit utiliser l'UCI (interface d'échecs universelle). Celle-ci sera envoyée une fois comme première commande après le démarrage du programme pour dire au moteur de passer en mode UCI. Après avoir reçu la commande UCI, le moteur doit s'identifier avec la commande "id" et envoyer les commandes "option" pour indiquer à l'interface graphique les paramètres de moteur pris en charge par le moteur, le cas échéant. Après cela, le moteur doit envoyer "uciok" pour accuser réception du mode UCI. Si aucun uciok n'est envoyé dans un certain laps de temps, la tâche du moteur sera supprimée par l'interface graphique.
+
+- 
