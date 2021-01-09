@@ -94,11 +94,12 @@ while not(board.is_game_over()):
     if (board.is_game_over()):
        print("The game is over")
        print(board.result())
+       
+    # sauvegarde au format pgn
+    new_pgn = open(nom_sauv,'w')
+    export = p.FileExporter(new_pgn)
+    game.accept(export)
 
 # regarder len(move) - 1
 
 
-# sauvegarde au format pgn
-new_pgn = open(nom_sauv,'w')
-export = p.FileExporter(new_pgn)
-game.accept(export)
