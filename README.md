@@ -38,8 +38,13 @@ La fonction ponderation() prend le board en paramètre et retourne sa pondérati
 
 - finalMain.py contient la méthode principale permettant de lancer une partie.
 On importe le fichier __init__.py.
-Une boucle While spécifie que tant que le jeu n'est pas terminé, c'est-à-dire qu'un roi n'a pas été mis en échec, la partie continue. Le joueur a la possibilité de l'enregistrer au format PGN.
+Une boucle While spécifie que tant que le jeu n'est pas terminé, c'est-à-dire qu'un roi n'a pas été mis en échec, la partie continue. Le joueur a la possibilité de l'enregistrer au format PGN. 
 
+- Main1.py permet de lancer une partie entre deux joueurs.
+
+- Main2.py permet de lancer une partie entre un joueur et une IA.
+
+- Main3.py permet de lancer une partie machine-machine, donc uniquement avec l'IA.
 
 
 
