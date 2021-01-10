@@ -26,5 +26,22 @@ Le moteur doit utiliser l'UCI (interface d'échecs universelle). Celle-ci sera e
 
 - On utilise la notation FEN (Forsyth Edward Notation) pour noter la position des pièces sur l'échéquier. Elle permet de retenir une position à étudier ultérieurement, mais également pour copier coller rapidement ces mêmes positions sur une interface graphique. Elle utilise la notation anglo-saxonne : K pour le Roi, Q pour la Dame, Q pour la Tour, N pour le Cavalier, B pour le Fou et P pour le Pion.
 
+## Composition du code
+Le programme est composé de deux modules permettant son bon fonctionnement.
+
+- __init__.py contient les méthodes se rapportant à finalMain.py.
+La fonction polyglot() retourne les positions statistiquement gagnantes répertoriées dans le livre: "bookfiss.bin" selon l'état du board ainsi que leur pondération.
+La fonction minmax() permet d'optimiser la recherche du meilleur coup en limitant le nombre de nœuds visités dans l'arbre de jeu. 
+L'algorithme de recherche AlphaBeta a ici été décomposé en trois parties (alpha(), beta(), aplhabeta()) pour faciliter la gestion des données et réduire le nombre d'erreurs.
+La fonction get_piecevalue() gère la pondération de chaque pièce et lui affecte un index unique.
+La fonction ponderation() prend le board en paramètre et retourne sa pondération à chaque fois qu'il s'actualise.
+
+- finalMain.py contient la méthode principale permettant de lancer une partie.
+On importe le fichier __init__.py.
+Une boucle While spécifie que tant que le jeu n'est pas terminé, c'est-à-dire qu'un roi n'a pas été mis en échec, la partie continue.
+
+
+
+
 
 
