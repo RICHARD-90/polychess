@@ -66,3 +66,9 @@ Le moteur doit utiliser l'UCI (interface d'échecs universelle). Celle-ci sera e
 
 - Polyglot : il s'agit d'une fonction qui retourne les positions statistiquement gagnantes répertoriées dans le livre: "bookfiss.bin" selon l'état de l'échéquier ainsi que leur pondération.
 
+- On sauvegarde  une partie en cours au format PGN afin de ne pas perdre des données.
+
+- On utilise la notation FEN (Forsyth Edward Notation) pour noter la position des pièces sur l'échéquier. Elle permet de retenir une position à étudier ultérieurement, mais également pour copier coller rapidement ces mêmes positions sur une interface graphique. Elle utilise la notation anglo-saxonne : K pour le Roi, Q pour la Dame, Q pour la Tour, N pour le Cavalier, B pour le Fou et P pour le Pion.
+
+
+
