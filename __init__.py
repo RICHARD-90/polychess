@@ -1,5 +1,6 @@
 import chess
 import math as m
+#from collections import namedtuple
 
 #==============================================================================
 def polyglot(board):
@@ -11,8 +12,10 @@ def polyglot(board):
     return position
 #==============================================================================
 def minmax(depth, board, is_maximizing):
+    
     # je copy le board
     board_copy = board.copy()
+    
     if depth == 0 :
         # on evalue le board
         return ponderation(board_copy)
@@ -134,18 +137,22 @@ def ponderation(board):
         i += 1
     return p
 #==============================================================================
+
 # test
 # depth = 3
 # board = chess.Board()
-
 # print(board)
-# a = minmax(depth, board, True)
-# b = minmax(depth, board, False)
-# #print(a, b)
-# alphabeta(depth, board, True)
-# # print(alpha(depth, board, b, a))
-# # print(beta(depth, board, b, a))
-# board.push_san('g1f3')
-# print(alpha(depth, board, b, a))
-# alphabeta(depth, board, True)
-# # print(board)
+# #******************************************************************************
+# i = 0
+# while i<100:
+#     if i%2 == 0:
+#         alphabeta(depth, board, True)
+#         move = input('player 1 :')
+#         board.push_san(str(move))
+#         print(board,'\n\n')
+#     else:
+#         move = alphabeta(depth, board, False)
+#         board.push_san(str(move))
+#         print(board,'\n\n')
+#     i +=1
+
