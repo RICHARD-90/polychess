@@ -64,4 +64,5 @@ L'objectif est de mettre en échec et mat le Roi du joueur adverse, c'est-à-dir
 - Interface d'échecs universelle (UCI)
 Le moteur doit utiliser l'UCI (interface d'échecs universelle). Celle-ci sera envoyée une fois comme première commande après le démarrage du programme pour dire au moteur de passer en mode UCI. Après avoir reçu la commande UCI, le moteur doit s'identifier avec la commande "id" et envoyer les commandes "option" pour indiquer à l'interface graphique les paramètres de moteur pris en charge par le moteur, le cas échéant. Après cela, le moteur doit envoyer "uciok" pour accuser réception du mode UCI. Si aucun uciok n'est envoyé dans un certain laps de temps, la tâche du moteur sera supprimée par l'interface graphique.
 
-- 
+- Polyglot : il s'agit d'une fonction qui retourne les positions statistiquement gagnantes répertoriées dans le livre: "bookfiss.bin" selon l'état de l'échéquier ainsi que leur pondération.
+
